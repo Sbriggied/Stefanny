@@ -1,16 +1,24 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
+
 
 package com.mycompany.pruebagit;
 
-/**
- *
- * @author SENA
- */
-public class PruebaGit {
+import javax.swing.JOptionPane;
+
+
+public class Pruebagit {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        int entrada, hora, minutos, segundos;
+        
+        entrada = Integer.parseInt(JOptionPane.showInputDialog("Digite los segundos"));
+        
+        hora = entrada/3600;
+        segundos = (entrada % 60);
+        minutos = (entrada % 3600) / 60;
+        
+        JOptionPane.showMessageDialog(null, "H " +hora+ "M " +minutos+ "S" +segundos);
+        
     }
 }
+
+// c"
